@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
     <link rel="stylesheet" href="css/styles.css">
      <title>Ristorante ConFusion</title>
+     
+                </div>
 </head>
 
 <body>
@@ -24,7 +26,7 @@
                 </span><!--this is for ttarget the icon-->
                 
             </button>
-            <a  class="navbar-brand  mr-auto" href="#">Ristorante ConFusion</a><!-- for displayiing some brand of company-->
+            <a  class="navbar-brand  mr-auto" href="#"><img src="img/logo.png" height="30" width="41"></a><!-- for displayiing some brand of company-->
             <div class="collapse navbar-collapse" id="Navbar">
             <ul class="navbar-nav mr-auto">                <!-- mr-auto to specify rigght margin--><!-- nav-item is used to display links in horizonta;-->
                 <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
@@ -43,7 +45,9 @@
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm"><!-- here for the first 6 columns above it qwas done and the next 6 in extra small will occupy down and for small,large etc te next -->
+                <div class="col-12 col-sm align-self-center" >
+                    <img src="img/logo.png" class="img-fluid"><!-- img-fluid is for responsive-->
+                "><!-- here for the first 6 columns above it qwas done and the next 6 in extra small will occupy down and for small,large etc te next -->
                 </div>
             </div>
         </div>
@@ -56,7 +60,18 @@
             </div>
             <div class="col col-sm-first col-md"><!--here for the rest 8 columns will be filled  for small and 9 for medium to large-->
                 <h2>Uthappizza</h2>
-                <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                 <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center"
+                            src="img/uthappizza.png" alt="Uthappizza"><!--mr-margin right-->
+                    <div class="media-body">
+                        <h2 class="mt-0">Uthappizza</h2>
+                        <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and
+                            Italian pizza, topped with Cerignola olives, ripe vine
+                            cherry tomatoes, Vidalia onion, Guntur chillies and
+                            Buffalo Paneer.</p>
+                    </div>
+                </div>
+                
             </div>
         </div>
 
@@ -76,9 +91,21 @@
                 <h3>Meet our Culinary Specialists</h3>
             </div>
             <div class="col col-sm order-sm-first col-md">
-                <h2>Alberto Somayya</h2>
-                <h4>Executive Chef</h4>
-                <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center"
+                            src="img/alberto.png" alt="Alberto Somayya">
+                    <div class="media-body">
+                        <h2 class="mt-0">Alberto Somayya</h2>
+                        <h4>Executive Chef</h4>
+                        <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide
+                            International experience having worked closely with
+                            whos-who in the culinary world, he specializes in
+                            creating mouthwatering Indo-Italian fusion experiences.
+                            </p>
+                    </div>
+                </div>
+                
+               
             </div>
         </div>
     </div>
