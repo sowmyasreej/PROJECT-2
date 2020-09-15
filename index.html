@@ -2,40 +2,41 @@
 <html lang="en">
 
 <head>
-   
+
      <!-- Required meta tags always come first -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- this line makes the page rsponsive by looking at viewport charcater-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">>
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
     <link rel="stylesheet" href="css/styles.css">
-     <title>Ristorante ConFusion</title>
-     
-                </div>
+    <title>Ristorante Con Fusion</title>
+
 </head>
 
 <body>
-    <nav class="navbar navbar-dark  navbar-expand-sm fixed-top"><!-- bg=background here if fixed top means nav bar will be top only if we scroll-->
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top"><!-- bg=background here if fixed top means nav bar will be top only if we scroll-->
         <div class="container">
             <button class="navbar-toggler" type="buttton " data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"> <!-- this keeps navbar toggler button to icon-->
                 </span><!--this is for ttarget the icon-->
                 
             </button>
-            <a  class="navbar-brand  mr-auto" href="#"><img src="img/logo.png" height="30" width="41"></a><!-- for displayiing some brand of company-->
+            <a  class="navbar-brand  mr-auto" href="./aboutus.html"><img src="img/logo.png" height="30" width="41"></a>
+            <!-- for displayiing some brand of company-->
             <div class="collapse navbar-collapse" id="Navbar">
             <ul class="navbar-nav mr-auto">                <!-- mr-auto to specify rigght margin--><!-- nav-item is used to display links in horizonta;-->
                 <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
-                 <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg "></span> Menu</a></li>
+                 <li class="nav-item "><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>
+                  <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-info fa-lg"></span> Menu</a></li>
                    <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
             </ul>
 
         </div>
+
     </nav>
 
     <header class="jumbotron">
@@ -45,14 +46,20 @@
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm align-self-center" >
+                <div class="col-12 col-sm-2 align-self-center" >
                     <img src="img/logo.png" class="img-fluid"><!-- img-fluid is for responsive-->
-                "><!-- here for the first 6 columns above it qwas done and the next 6 in extra small will occupy down and for small,large etc te next -->
+                <!-- here for the first 6 columns above it qwas done and the next 6 in extra small will occupy down and for small,large etc te next -->
                 </div>
-            </div>
-        </div>
+            
+        <div class="col-12 offset-1 col-sm-3 align-self-center">
+        
+     <button  onclick="window.location.href='#Reserve table';" class="btn btn-warning" >Reserve Table</button>
+ </div>
+</div>
+</div>
+ 
     </header>
-
+ 
    <div class="container">
         <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 order-sm-last col-md-3"><!-- for small it will occupy 4 and for md to large 3-->
@@ -74,19 +81,27 @@
                 
             </div>
         </div>
-
-
-        <div class="row row-content align-items-center">
-            <div class="col-12 col-sm-4 col-md-3">
-                <h3>This Month's Promotions</h3>
+        <div class="row row-content">
+            <div class="col-12 col-sm-3">
+                
+                <h3 align="center">This Month's Promotions</h3>
             </div>
-            <div class="col col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+            <div class="col-12 col-sm-9">
+                <div class="media">
+                    <div class="media-body">
+                        <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">New</span></h2>
+                        <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                        
+                 </div>
+                    <div class="media-right media-middle">
+                        <a href="#">
+                            <img src="img/buffet.png" class="media-object img-thumbnail" alt="Buffet">
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <div class="row row-content align-items-center">
+             <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 order-sm-last col-md-3">
                 <h3>Meet our Culinary Specialists</h3>
             </div>
@@ -102,15 +117,80 @@
                             whos-who in the culinary world, he specializes in
                             creating mouthwatering Indo-Italian fusion experiences.
                             </p>
-                    </div>
+                             <a id="Reserve table"></a>
+                           </div>
                 </div>
                 
                
             </div>
         </div>
-    </div>
+        <form>
+        
+        
+        <div class="col-12 offset-md-2 col-sm-8">
+      <div class="Card">
+                     <h1 class="card-header bg-warning text-white">Reserve a Table</h1>
 
-    <footer class="footer">
+                    
+
+                     <div class="card-body">
+
+                         <dl class="row">
+                            <dt class="col-2">Number of guests</dt>
+                            <dd class="col-10">
+                           <form>
+                           
+    <label class="radio-inline">
+      <input type="radio" name="optradio" checked>1
+    
+    <label class="radio-inline">
+      <input type="radio" name="optradio">2
+
+  <label class="radio-inline">
+      <input type="radio" name="optradio"> 3
+      <label class="radio-inline">
+      <input type="radio" name="optradio"> 4
+      <label class="radio-inline">
+      <input type="radio" name="optradio"> 5
+      <label class="radio-inline">
+      <input type="radio" name="optradio"> 6
+    </label>
+</dd>
+</dl>
+
+<div class="form-group row">
+    <dl class="row">
+                        <dt for="Date and time" class="col-12  col-md-2 ">Date and time</label></dt>
+     
+                        
+                         <dd class="col-md-5">
+                            
+                            <input type="text" class="form-control" id="areacode" name="areacode" placeholder="Date">
+                        </dd>
+                         <dd class=" col-md-5">
+                            <input type="number" class="form-control" id="time" name="time" placeholder="Time">
+                            <div class="form-group row">
+                            </dd>
+                       
+                    <div class="offset-md-2 col-md-10">
+                        <button type="submit" class="btn btn-primary">
+                            Reserve
+                        </button>
+                    </div>
+ 
+                 </div>
+                        </div>
+                        </div>
+                    </div>
+                </dl>
+
+ 
+
+</form>
+</div>
+  
+     
+ <footer class="footer">
         <div class="container">
             <div class="row">             
                 <div class="col-4 offset-1 col-sm-2">
