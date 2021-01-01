@@ -13,6 +13,7 @@
      <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
     <link rel="stylesheet" href="css/styles.css">
+
     <title>Ristorante Con Fusion</title>
 
 </head>
@@ -34,25 +35,27 @@
                   <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-info fa-lg"></span> Menu</a></li>
                    <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
             </ul>
-            <span class="navbar-text"><!--thid is used to show and hide the model-->
-                    <a data-toggle="modal" data-target="#loginModal">
+           <span class="navbar-text"><!--thid is used to show and hide the model-->
+                  <!--  <a data-toggle="modal" data-target="#loginModal">-->
+                    <a id="loginpop">
                     <span class="fa fa-sign-in"></span> Login</a>
-                </span>
+                    
+                            </div>
 
-        </div>
 </div>
 
     </nav>
 
 
-    <div id="loginModal" class="modal fade" role="dialog"><!-- dialog is to display on top of page-->
-        <div class="modal-dialog modal-lg" role="content">
-            <!-- Modal content-->
-            <div class="modal-content">
+    <div id="loginModal" class="modal fade" role="dialog">   --><!-- dialog is to display on top of page-->
+     <div class="modal-dialog modal-lg" role="content">
+        <!-- Modal content-->
+          <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Login </h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button><!--- data dismiss="modal" means if u click on button ot will dismmiss modal"-->
-                </div>
+               </div>-->
+               
                 <div class="modal-body">
                     <form>
                         <div class="form-row">
@@ -81,7 +84,7 @@
             </div>
         </div>
  </div>
- 
+
 
   <div class="modal fade" id="reserveModal" role="dialog">
       <div class="modal-dialog">
@@ -171,6 +174,8 @@
             
   <!-- Trigger the modal with a button -->
  <a id="reserveButton" type="button" class="btn btn-warning btn-block"  data-placement="bottom" href="#reserveModal">Reserve Table</a>
+
+                    
 
 </div>
 <!-- data-html=true is for tool tip content can be style by html-->
@@ -419,9 +424,10 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
    </body>
-<script type="text/javascript">
-      $(document).ready(function() {
+ <script type="text/javascript">
+     
 
+      $(document).ready(function() {
         $("#loginpop").click(function() {
         $("#loginModal").modal();
         });
@@ -431,7 +437,7 @@
         $("#logincancel").click(function() {
           $("#loginModal").modal('hide');
         });
-        $("#reserveButton").click(function() {
+ $("#reserveButton").click(function() {
           $("#reserveModal").modal();
         });
         $(".close").click(function() {
@@ -440,9 +446,12 @@
         $("#reserveCancel").click(function() {
           $("#reserveModal").modal('hide');
         });
+       
+        
 
       });
-  </script>
+
+    </script>
    <script>
         $(document).ready(function(){
             $("#mycarousel").carousel( { interval: 2000 } );

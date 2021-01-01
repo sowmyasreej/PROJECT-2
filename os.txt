@@ -1,0 +1,2 @@
+disadvantage of external fragmentation;
+we will be allocating a big hole where storage will be wasted
